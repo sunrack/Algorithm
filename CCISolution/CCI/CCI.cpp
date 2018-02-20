@@ -5,6 +5,7 @@
 
 #include "Q_1_6.h"
 #include "Q_1_5.h"
+#include "Q_1_3.h"
 
 
 int main()
@@ -20,6 +21,8 @@ int main()
 	strCompressed = Q_1_6::Compress("abcde");
 
 	Q_1_5::Test();
+
+	Q_1_3::Test();
 	
     return 0;
 }
