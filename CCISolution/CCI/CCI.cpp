@@ -4,6 +4,7 @@
 #include "stdafx.h"
 
 #include "Q_1_6.h"
+#include "Q_1_5.h"
 
 
 int main()
@@ -17,6 +18,8 @@ int main()
 
 	strCompressed = Q_1_6::Compress("aabcccccaaa");
 	strCompressed = Q_1_6::Compress("abcde");
+
+	Q_1_5::Test();
 	
     return 0;
 }
