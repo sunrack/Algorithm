@@ -26,40 +26,23 @@ int Q_16_17::Test()
 
 int Q_16_17::FindMaxSubArrayFast(const int A[], int n)
 {
-	int start = 0;
-	int end = 0;
+	int start = -1;
+	int end = -1;
 	int max = INT_MIN;
 
-	if (n == 0)
-	{
-		start = -1;
-		end = -1;
-		return max;
-	}
-
-	int curSum = A[0];
+	int curSum = 0;
 	int curStart = 0;
 	int curEnd = 0;
-	max = A[0];
 
-	printf("%s %s %s %s %s %s %s \n", "i", "curSum", "max", "curStart", "curEnd", "start", "end");
+	printf("%10s %10s %10s %10s %10s %10s %10s \n", "i", "curSum", "max", "curStart", "curEnd", "start", "end");
 
-	for (int i = 1; i<n; i++)
+	for (int i = 0; i<n; i++)
 	{
-		if ((curSum + A[i]) < A[i])
-		{
-			// if curSum < 0, that means we need to restart from the current position
-			curSum = A[i];
-			curStart = i;
-			curEnd = i;
-		}
-		else
-		{
-			// continue to add current position
-			curSum += A[i];
-			curEnd = i;
-		}
+		// add current
+		curSum += A[i];
+		curEnd = i;
 
+		//update max
 		if (curSum > max)
 		{
 			// update max
@@ -68,7 +51,15 @@ int Q_16_17::FindMaxSubArrayFast(const int A[], int n)
 			end = curEnd;
 		}
 
-		printf("%5d %5d %5d %5d %5d %5d %5d \n", i, curSum, max, curStart, curEnd, start, end);
+		printf("%10d %10d %10d %10d %10d %10d %10d \n", i, curSum, max, curStart, curEnd, start, end);
+
+		if (curSum < 0)
+		{
+			// if curSum < 0, that means we need to restart from the current position
+			curSum = 0;
+			curStart = i+1;
+			curEnd = i+1;
+		}
 	}
 
 	std::cout<< max << endl;
