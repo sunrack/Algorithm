@@ -23,7 +23,7 @@
     <ProjectGuid>{E29FA3DE-622D-4CB1-8AA4-D0BC6D90EEE9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>CCI</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,18 +139,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QBase.h" />
+    <ClInclude Include="Q_16_17.h" />
     <ClInclude Include="Q_1_3.h" />
     <ClInclude Include="Q_1_5.h" />
     <ClInclude Include="Q_1_6.h" />
+    <ClInclude Include="Q_2_2.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CCI.cpp" />
     <ClCompile Include="QBase.cpp" />
+    <ClCompile Include="Q_16_17.cpp" />
     <ClCompile Include="Q_1_3.cpp" />
     <ClCompile Include="Q_1_5.cpp" />
     <ClCompile Include="Q_1_6.cpp" />
+    <ClCompile Include="Q_2_2.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

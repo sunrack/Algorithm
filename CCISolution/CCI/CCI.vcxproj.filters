@@ -36,6 +36,12 @@
     <ClInclude Include="Q_1_3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Q_2_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Q_16_17.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -54,6 +60,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Q_1_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q_2_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q_16_17.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
